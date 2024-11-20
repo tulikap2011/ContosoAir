@@ -1,7 +1,6 @@
    pool: default
      
-   trigger:
-     - master
+   trigger: none
    steps:
      - task: NodeTool@0
        inputs:
