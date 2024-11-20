@@ -14,3 +14,12 @@ resources:
       include:
        - master
 pool: default
+steps:
+- task: DownloadPipelineArtifact@2
+  inputs:
+    buildType: 'specific'
+    project: '9b51e1cf-6468-43dd-adae-f8defcfa169c'
+    definition: '3'
+    buildVersionToDownload: 'latest'
+    targetPath: '$(Pipeline.Workspace)'
+
